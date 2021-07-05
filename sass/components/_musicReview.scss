@@ -1,0 +1,16 @@
+.music {
+
+    &::before {
+        border: 7px solid #57c452;
+        background-color: #57c452;
+    }
+
+    &__artist::before {
+        content: "Made by ";
+    }
+    
+    &__img {
+        width: 300px;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,53 @@
+.navbar {
+    background-color: $color-primary-light;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+
+    &__btn {
+        text-decoration: none;
+        color: $color-primary-dark;
+        text-transform: uppercase;
+        user-select: none;
+        font-weight: 700;
+        font-size: 2rem;
+        transition: all .3s;
+        cursor: default;
+        letter-spacing: .3rem;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        padding: 10px 0;
+    }
+    
+    & > div {
+        transition: all .3s;
+        border-bottom: 2px solid transparent;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    & > div:not(:last-of-type) {
+        margin-right: 30px;
+    }
+    
+    & > div:hover {
+        border-bottom: 2px solid $color-white;
+        
+        .navbar__btn {
+            color: $color-secondary;
+        }
+    }
+}
+
+.active-state-btn { 
+    color: $color-secondary;
+}
+
+#active-state-col {
+    border-bottom: 2px solid $color-white;
+}
+

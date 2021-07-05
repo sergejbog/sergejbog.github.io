@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Movies</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ecdca0c4af.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="imgs/icon.png">
+    </head>
+    <body>
+        <nav class="navbar u-margin-top-medium">
+            <div><a href="index.html" class="navbar__btn">Home</a></div>
+            <div id="active-state-col"><a href="movies.html" class="navbar__btn active-state-btn">Movies</a></div>
+            <div><a href="games.html" class="navbar__btn">Video Games</a></div> 
+            <div><a href="music.html" class="navbar__btn">Music</a></div>
+        </nav>
+
+        <h1 class="heading-primary u-margin-top-medium u-center-text">Reviews for movies</h1>
+
+        <div class="primary u-margin-top-big">
+            <div class="search">
+                <form action="post" class="search-box">
+                    <input type="text" class="search-box__text" placeholder="Search"> 
+                    <input type="button" value="" class="search-box__btn"> 
+                </form>
+
+                <form action="post" class="u-margin-top-medium">
+                    <h3 class="heading-tertiary sort--heading">Sort movies</h3>
+                    <div class="sort-movies">
+                        <input type="radio" id="movie-latest" name="sort-movies__radio" checked>
+                        <span class="sort-movies__design"></span>
+                        <label for="movie-latest" class="sort-movies__label">Latest</label>
+                    </div>
+
+                    <div class="sort-movies">
+                        <input type="radio" id="movie-name" name="sort-movies__radio">
+                        <span class="sort-movies__design"></span>
+                        <label for="movie-name" class="sort-movies__label">Name</label>
+                    </div>
+
+                    <div class="sort-movies">
+                        <input type="radio" id="director-name" name="sort-movies__radio">
+                        <span class="sort-movies__design"></span>
+                        <label for="director-name" class="sort-movies__label">Director</label>
+                    </div>
+                </form> 
+            </div>
+
+            <div class="movie">
+                <img src="imgs/1.jpg" alt="Space Odyssey" class="movie__img">
+                <div class="movie__text">
+                    <div class="movie__heading">
+                        <h2 class="heading-secondary movie__title">2001: A Space Odyssey <span class="movie__year">(1968)</span></h2>
+                        <p class="movie__director u-margin-bottom-small">Stanley Kubrick</p> 
+                    </div>
+                    <p class="movie__review u-margin-bottom-micro">Review</p>
+                    <p class="movie__review--text">The musical background is glorious, the colors are dazzling, and there's an interesting use of HAL as a villainous computer. Beyond that, there is nothing the least bit interesting about the human characters (trite dialogue and no personality or warmth to any of the individuals), the pace is unbelievably slow (so the intellectually gifted can philosophize on the mysteries of space), and the payoff at the end leaves you either breathless with enlightenment or convinced that you have watched three hours of nothingness.</p>
+                    <a href="JavaScript:void(0)" data-popup-type="popup-2" class="movie__more">Read more</a>
+                </div>
+            </div>
+
+            <div class="movie u-margin-bottom-medium">
+                <img src="imgs/2.jpg" alt="Space Odyssey" class="movie__img">
+                <div class="movie__text">
+                    <div class="movie__heading">
+                        <h2 class="heading-secondary movie__title">Scott Pilgrim vs. the World <span class="movie__year">(2010)</span></h2>
+                        <p class="movie__director u-margin-bottom-small">Edgar Wright</p> 
+                    </div>
+                    <p class="movie__review u-margin-bottom-micro">Review</p>
+                    <p class="movie__review--text">Scott Pilgrim versus the World is a Canadian romantic comedy and musical based on the comic books by Bryan Lee O'Malley. Scott Pilgrim is a 22y.o teen-age-looking insecure guy and guitarist who plays in a rock band called Sex Bom-omb and is going out with a minor high-school Chinese girl, Knives. He seems content until he has a dream about a girl. She happens to appear in his real world in the form of Ramona, the ever-changing-hair-colour American recently moved to Toronto. Scott is over the moon, but he has to face his own personal demons, break up with sweet Knives and fight for Ramona's love against her seven exes.</p>
+                    <a href="JavaScript:void(0)" data-popup-type="popup-1" class="movie__more">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-1">
+            <div class="popup__window">
+                <div class="popup__window--movie">
+                    <img src="imgs/2.jpg" alt="Scott Pilgrim">
+                    <div class="popup__window--heading">
+                        <h2 class="heading-secondary">Scott Pilgrim vs. the World <span class="movie__year">(2010)</span></h2>
+                        <p class="movie__director u-margin-bottom-small">Edgar Wright</p> 
+                    </div>
+                </div>
+                <div class="popup__window--review">
+                    <p>Scott Pilgrim versus the World is a Canadian romantic comedy and musical based on the comic books by Bryan Lee O'Malley. Scott Pilgrim is a 22y.o teen-age-looking insecure guy and guitarist who plays in a rock band called Sex Bom-omb and is going out with a minor high-school Chinese girl, Knives. He seems content until he has a dream about a girl. She happens to appear in his real world in the form of Ramona, the ever-changing-hair-colour American recently moved to Toronto. Scott is over the moon, but he has to face his own personal demons, break up with sweet Knives and fight for Ramona's love against herove against heove against heove against he seven.</p>
+                </div>
+                <a href="JavaScript:void(0)" class="popup__window--close">Close</a>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-2">
+            <div class="popup__window">
+                <div class="popup__window--movie">
+                    <img src="imgs/1.jpg" alt="Space Odyssey">
+                    <div class="popup__window--heading">
+                        <h2 class="heading-secondary">2001: A Space Odyssey <span class="movie__year">(1968)</span></h2>
+                        <p class="movie__director u-margin-bottom-small">Stanley Kubrick</p> 
+                    </div>
+                </div>
+                <div class="popup__window--review">
+                    <p>The musical background is glorious, the colors are dazzling, and there's an interesting use of HAL as a villainous computer. Beyond that, there is nothing the least bit interesting about the human characters (trite dialogue and no personality or warmth to any of the individuals), the pace is unbelievably slow (so the intellectually gifted can philosophize on the mysteries of space), and the payoff at the end leaves you either breathless with enlightenment or convinced that you have watched three hours of nothingness.</p>
+                </div>
+                <a href="JavaScript:void(0)" class="popup__window--close">Close</a>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

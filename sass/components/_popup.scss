@@ -1,0 +1,88 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(black, 0.9);
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    z-index: 20;
+    
+    &__window {
+        margin: 6rem auto;
+        position: relative;
+        
+        width: 50%;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 2rem rgba(black, 0.4);
+        border-radius: 4px;
+        overflow: auto;
+        border-top: 2rem solid $color-primary-light;
+        
+        img {
+            width: 30%;
+            float: left;
+            padding: 3rem;
+            padding-bottom: 1.5rem;
+        }
+        
+        &--movie {
+            color: $color-secondary;
+            
+            h2 {
+                font-size: 2.5rem;
+                padding: 3rem;
+                hyphens: auto;
+                padding-right: 2rem;
+                line-height: 3.3rem;
+                letter-spacing: .5rem;
+            }
+            
+            p {
+                margin-top: -2.5rem;
+                color: $color-primary;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+        }
+        
+        
+        &--review {
+            display: block;
+            color: black;
+            width: 100%;
+            padding: 2rem;
+            padding-top: 0;
+            font-size: 1.5rem;
+            line-height: 2.7rem;
+            padding-bottom: 7rem;
+        }
+
+        &--close {
+            position: absolute;
+            right: 1.5rem;
+            bottom: 1.5rem;
+            padding: 1rem;
+            text-decoration: none;
+            background-color: #b80f0a;
+            font-size: 1.6rem;
+            color: white;
+            border-radius: 3px;
+            transition: all .3s;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+
+            &:hover {
+                background-color: #e5221c;
+            }
+        }
+    }
+}
+
+.show_popup {
+    opacity: 1;
+    visibility: visible;
+}
